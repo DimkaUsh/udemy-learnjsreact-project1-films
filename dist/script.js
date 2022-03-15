@@ -23,4 +23,9 @@ for (let i = 0; i < 2; i++){
     personalMovieDB.movies[nameMovies] = gradeMovies;
 }
 
+personalMovieDB.count < 10 ? alert('Просмотрено довольно мало фильмов') :
+personalMovieDB.count > 10 && personalMovieDB < 30 ? alert('Вы классический зритель') :
+personalMovieDB.count > 30 ? alert('Вы киноман') : 
+alert('Произошла ошибка')
+
 console.log(personalMovieDB)
