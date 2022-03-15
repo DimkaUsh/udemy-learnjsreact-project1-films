@@ -64,12 +64,22 @@ const personalMovieDB = {
         })
     },
 
+    toggleVisibleMyDB : () => {
+        switch (personalMovieDB.privat){
+            case false : personalMovieDB.privat = true ; break
+            case true : personalMovieDB.privat = false; break
+        }
+    }
+
 }
 
-// personalMovieDB.start()
-// personalMovieDB.rememberMyFilms()
-// personalMovieDB.detectPersonalLevel()
-// personalMovieDB.writeYourGenres()
-// personalMovieDB.showMyDB()
+personalMovieDB.start()
+personalMovieDB.rememberMyFilms()
+personalMovieDB.detectPersonalLevel()
+personalMovieDB.writeYourGenres()
+personalMovieDB.showMyDB()
 
+personalMovieDB.toggleVisibleMyDB()
+personalMovieDB.toggleVisibleMyDB()
+personalMovieDB.showMyDB()
 
