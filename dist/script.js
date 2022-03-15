@@ -15,7 +15,12 @@ for (let i = 0; i < 2; i++){
     let nameMovies = prompt('Один из последних просмотренных фильмов?', 'Название');
     let gradeMovies = prompt('На сколько оцените его?', 'Оценка');
 
-    personalMovieDB.movies[nameMovies] = gradeMovies
+    if (nameMovies === null || nameMovies === 'Название' || nameMovies.length > 50) {
+        i -- ;
+        continue2
+    };
+    
+    personalMovieDB.movies[nameMovies] = gradeMovies;
 }
 
 console.log(personalMovieDB)
